@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element</title>
+
+    <style>
+        /* p::first-letter{
+            color: red;
+            font-size: 20px;
+        } */
+        p::first-line {
+            color: red;
+            font-size: 20px;
+        }
+
+        p::before{
+            content: url(./images/download.jpg);
+        }
+        p::after{
+            content: url(./images/download.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illum facere ullam adipisci distinctio
+        itaque veritatis laudantium quidem voluptatum a!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsa ratione a porro nesciunt voluptates nostrum
+        labore exercitationem ipsam blanditiis deserunt molestias, eaque doloremque nisi iste ipsum debitis corporis
+        officia omnis? Provident, temporibus sunt accusantium tempore eligendi assumenda dolores aspernatur perferendis,
+        consequatur dolorum nemo enim quis blanditiis ut aut laboriosam.
+    </p>
+</body>
+
+</html>

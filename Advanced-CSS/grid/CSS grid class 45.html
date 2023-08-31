@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <link rel="stylesheet" href="./css/base.css">
+
+    <style>
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 50px 200px 100px;
+            grid-gap: 5px;
+            grid-template-areas:
+                ". . . h h h h h h h h h"
+                "m m m c c c c c c c c c"
+                "m m m f f f f f f f f f";
+        }
+
+        .header {
+            grid-area: h;
+        }
+
+        .footer {
+            grid-area: f;
+        }
+
+        .content {
+            grid-area: c;
+        }
+
+        .menu {
+            grid-area: m;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="title">CSS GRID</h1>
+    <div class="container">
+        <div class="header">HEADER 1</div>
+        <div class="menu">MENU 2</div>
+        <div class="content">CONTENT 3</div>
+        <div class="footer">FOOTER 4</div>
+    </div>
+
+</body>
+
+</html>

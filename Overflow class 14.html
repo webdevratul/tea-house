@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        * {
+            margin-top: 10px;
+        }
+
+        div.div-1 {
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: hidden;
+        }
+
+        div.div-2 {
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        div.div-3 {
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- visible- // By default, the overflow is visible
+    hidden -
+    scroll -
+    auto -->
+
+    <!-- hidden -->
+    <div class="div-1">You can use the overflow property when you want to have better control of the layout. The
+        overflow property
+        specifies what happens if content overflows an element's box.
+    </div>
+
+    <!-- scroll -->
+    <div class="div-2">You can use the overflow property when you want to have better control of the layout. The
+        overflow property
+        specifies what happens if content overflows an element's box.
+    </div>
+
+    <!-- auto -->
+    <div class="div-3">You can use the overflow property when you want to have better control of the layout. The
+        overflow property
+        specifies what happens if content overflows an element's box.
+    </div>
+
+
+</body>
+
+</html>

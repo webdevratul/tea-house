@@ -1,0 +1,37 @@
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container div {
+    padding: 20px;
+    flex-basis: 30%;
+}
+
+.container div.child1 {
+    background-color: red;
+    /* flex: 2; */
+    order: 3;
+}
+
+.container div.child2 {
+    background-color: green;
+    /* flex: 1; */
+    order: 2;
+}
+
+.container div.child3 {
+    background-color: blue;
+    /* flex: 1; */
+    order: 1;
+}

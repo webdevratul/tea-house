@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+    <style>
+        div.one {
+            background: red;
+            overflow: hidden;
+        }
+
+        div.two {
+            width: 30%;
+            height: 200px;
+            background: green;
+            float: left;
+        }
+
+        div.three {
+            width: 30%;
+            height: 200px;
+            background: blue;
+            float: left;
+        }
+
+        /* clear property */
+        .a1{
+            width: 200px;
+            height: 200px;
+            background: black;
+            float: left;
+        }
+        .a2{
+            width: 200px;
+            height: 200px;
+            background: rgb(21, 6, 6);
+            clear: both;
+        }
+        .a3{
+            width: 200px;
+            height: 200px;
+            background: rgb(96, 89, 89);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <!-- clear property -->
+    <div class="a1"></div>
+    <div class="a2"></div>
+    <div class="a3"></div>
+</body>
+
+</html>

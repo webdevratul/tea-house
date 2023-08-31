@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+    <style>
+        p.dotted {
+            border-style: dotted;
+            border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+
+        p.double {
+            border-style: double;
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+
+        p.none {
+            border-style: none;
+        }
+
+        p.hidden {
+            border-style: hidden;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+
+        /* This property specifies the width of the four borders:: */
+
+        p.one {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        p.three {
+            border-style: dotted;
+            border-width: 2px;
+        }
+
+        p.four {
+            border-style: dotted;
+            border-width: thick;
+        }
+
+        p.five {
+            border-style: double;
+            border-width: 15px;
+        }
+
+        p.six {
+            border-style: double;
+            border-width: thick;
+        }
+
+        /* The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border): */
+        p.one {
+            border-style: solid;
+            border-width: 5px 20px;
+            /* 5px top and bottom, 20px on the sides */
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: 20px 5px;
+            /* 20px top and bottom, 5px on the sides */
+        }
+
+        p.three {
+            border-style: solid;
+            border-width: 25px 10px 4px 35px;
+            border-color: antiquewhite;
+            border-radius: 10px;
+            /* 25px top, 10px right, 4px bottom and 35px left */
+        }
+    </style>
+</head>
+
+<body>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+
+    <!-- Demonstration of the different border widths: -->
+
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+    <p class="four">Some text.</p>
+    <p class="five">Some text.</p>
+    <p class="six">Some text.</p>
+
+    <!-- The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border): -->
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+
+</body>
+
+</html>

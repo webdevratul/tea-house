@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position Property</title>
+
+    <style>
+        /* relative */
+        div.relative {
+            position: relative;
+            left: 200px;
+            top: 50px;
+            border: 2px solid red;
+            padding: 10px;
+            width: 50%;
+        }
+
+        /* fixed */
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+
+        /* relative & absolute */
+        div.parent {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 3px solid #73AD21;
+        }
+
+        div.child {
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+
+        /* sticky */
+        .sticky{
+            margin-top: 200px;
+            margin-bottom: 500px;
+        }
+
+        h1.first-h1{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="first-h1">Hello</h1>
+    <!-- static // static is default position
+    relative
+    fixed
+    absolute
+    sticky -->
+
+    <!-- relative -->
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+
+    <!-- fixed -->
+    <h2>position: fixed;</h2>
+
+    <!-- relative & absolute -->
+    <div class="parent">This div element has position: relative;
+        <div class="child">This div element has position: absolute;</div>
+    </div>
+
+    <!-- sticky -->
+
+    <div class="sticky">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laudantium cupiditate delectus, placeat unde
+        quaerat illo impedit, corrupti atque distinctio quia accusantium, voluptate quod porro incidunt quasi fugiat
+        inventore iure mollitia ullam doloribus enim nisi! Fugit provident tenetur nesciunt. Commodi voluptatum
+        consequatur laboriosam accusantium, ex deserunt omnis obcaecati quidem corporis atque, debitis cum magnam odio
+        delectus mollitia inventore error rem illo voluptates impedit autem beatae tempora? Esse accusantium accusamus
+        quos nisi, debitis soluta consectetur, culpa doloremque quod saepe obcaecati. Vero perferendis fugit officiis
+        molestiae numquam sed, laudantium labore cumque quisquam molestias optio laboriosam enim maxime dolorem
+        voluptates placeat aut similique ipsa vitae sequi repudiandae id reiciendis voluptate minus. Dignissimos in fuga
+        facilis explicabo doloribus, molestiae error ipsam deleniti quisquam nisi facere cumque praesentium quod
+        nostrum, odio eaque maxime libero. Inventore reiciendis eveniet consequuntur ullam corrupti voluptas dolores
+        quibusdam ipsam veniam quo! Dignissimos quasi quo fugit, tenetur, ex assumenda magnam quam distinctio doloribus,
+        quisquam perferendis temporibus saepe eligendi sed ipsam natus similique voluptates? Explicabo repellat ea odit
+        ipsum ab, a temporibus inventore, doloremque, iusto quibusdam alias impedit animi fugiat maxime praesentium
+        possimus quisquam. Autem eaque possimus nam at adipisci dolorum unde earum laboriosam in! Sint delectus, quo
+        aliquam ipsam cumque dicta.
+    </div>
+
+
+</body>
+
+</html>
